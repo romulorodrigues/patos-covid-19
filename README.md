@@ -17,6 +17,7 @@ getData(){
       ...
 }
 ```
+# Dados
 
 Mais informações sobre a API: https://github.com/turicas/covid19-br/blob/master/api.md
 
