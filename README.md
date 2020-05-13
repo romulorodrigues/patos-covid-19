@@ -3,7 +3,7 @@ Esta é uma simples aplicação para exibir dados sobre o coronavírus na cidade
 
 Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 
-#Uso
+# Uso
 
 - Baixe o repositório como arquivo zip ou faça um clone;
 - No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei PB (Paraíba).
