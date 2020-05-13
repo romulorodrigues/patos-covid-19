@@ -1,5 +1,5 @@
 # patos-covid-19
-
+Esta é uma simples aplicação para exibir dados sobre o coronavírus na cidade de Patos - PB. Os dados apresentados são: número de casos confirmados, número de mortes, população estimada e taxa de mortalidade (mortes / confirmados).
 ## Project setup
 ```
 npm install
