@@ -10,14 +10,14 @@ Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 - Baixe o repositório como arquivo zip ou faça um clone;
 - No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei PB (Paraíba).
 - Ex: https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=PB.
-- Altere as imagens e o layout do projeto para a sua realidade.
-
 ```
 getData(){
       axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=SEU_ESTADO")
       ...
 }
 ```
+- Altere as imagens e o layout do projeto para a sua realidade.
+
 # Dados
 
 Mais informações sobre a API: https://github.com/turicas/covid19-br/blob/master/api.md
