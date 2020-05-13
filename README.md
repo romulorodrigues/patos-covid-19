@@ -10,9 +10,32 @@ Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 - Baixe o repositório como arquivo zip ou faça um clone;
 - No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei PB (Paraíba).
 - Ex: https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=PB.
-- Mais informações:
 
-Fonte: Secretarias de Saúde das Unidades Federativas, dados tratados por Álvaro Justen e colaboradores/Brasil.IO.
+getData(){
+      axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=SEU_ESTADO")
+      .then((response) => {
+          let patos = {};
+          for(var i = 0; i < response.data.results.length; i++){
+              if(response.data.results[i].city == "Patos"){
+                  patos = response.data.results[i];
+              }else{
+                  continue;
+              }
+          }
+          this.confirmed = patos.confirmed;
+          this.deaths = patos.deaths;
+          this.estimated_population_2019 = patos.estimated_population_2019;
+          this.death_rate = patos.death_rate;
+          this.date = patos.date.split('-').reverse().join('-');
+      }).catch((error) => {
+          console.log(error);
+      });
+}
+
+Mais informações sobre a API: https://github.com/turicas/covid19-br/blob/master/api.md
+
+Fonte dos dados: Secretarias de Saúde das Unidades Federativas, dados tratados por Álvaro Justen e colaboradores/Brasil.IO.
+
 Brasil.IO: boletins epidemiológicos da COVID-19 por município por dia, disponível em: https://brasil.io/dataset/covid19/ (última atualização: 12-05-2020, acesso em 13-05-2020).
 
 ## Project setup
