@@ -5,16 +5,11 @@ Você pode adaptar para a sua cidade! É muito simples!
 
 Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 
-# Instalação
-```
-npm install
-```
-
-
 # Uso
 
 - Baixe o repositório como arquivo zip ou faça um clone;
-- No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei PB (Paraíba).
+- Instale as dependências (npm install);
+- No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei PB (Paraíba);
 - Ex: https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=PB.
 ```
 getData(){
