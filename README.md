@@ -11,26 +11,12 @@ Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 - No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei PB (Paraíba).
 - Ex: https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=PB.
 
+````
 getData(){
       axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=SEU_ESTADO")
-      .then((response) => {
-          let patos = {};
-          for(var i = 0; i < response.data.results.length; i++){
-              if(response.data.results[i].city == "Patos"){
-                  patos = response.data.results[i];
-              }else{
-                  continue;
-              }
-          }
-          this.confirmed = patos.confirmed;
-          this.deaths = patos.deaths;
-          this.estimated_population_2019 = patos.estimated_population_2019;
-          this.death_rate = patos.death_rate;
-          this.date = patos.date.split('-').reverse().join('-');
-      }).catch((error) => {
-          console.log(error);
-      });
+      ...
 }
+```
 
 Mais informações sobre a API: https://github.com/turicas/covid19-br/blob/master/api.md
 
