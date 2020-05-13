@@ -24,7 +24,7 @@ Fonte dos dados: Secretarias de Saúde das Unidades Federativas, dados tratados 
 
 Brasil.IO: boletins epidemiológicos da COVID-19 por município por dia, disponível em: https://brasil.io/dataset/covid19/ (última atualização: 12-05-2020, acesso em 13-05-2020).
 
-## Project setup
+## Instalação
 ```
 npm install
 ```
