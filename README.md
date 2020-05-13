@@ -5,7 +5,7 @@ Você pode adaptar para a sua cidade! É muito simples!
 
 Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 
-## Instalação
+# Instalação
 ```
 npm install
 ```
