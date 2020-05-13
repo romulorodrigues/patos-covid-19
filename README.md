@@ -5,6 +5,12 @@ Você pode adaptar para a sua cidade! É muito simples!
 
 Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 
+## Instalação
+```
+npm install
+```
+
+
 # Uso
 
 - Baixe o repositório como arquivo zip ou faça um clone;
@@ -26,8 +32,4 @@ Fonte dos dados: Secretarias de Saúde das Unidades Federativas, dados tratados 
 
 Brasil.IO: boletins epidemiológicos da COVID-19 por município por dia, disponível em: https://brasil.io/dataset/covid19/ (última atualização: 12-05-2020, acesso em 13-05-2020).
 
-## Instalação
-```
-npm install
-```
 
