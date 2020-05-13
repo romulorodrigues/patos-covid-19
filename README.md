@@ -1,6 +1,8 @@
 # Patos COVID-19
 Esta é uma simples aplicação para exibir dados sobre o coronavírus na cidade de Patos - PB. Os dados apresentados são: número de casos confirmados, número de mortes, população estimada e taxa de mortalidade (mortes / confirmados).
 
+Você pode adaptar para a sua cidade! É muito simples!
+
 Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 
 # Uso
