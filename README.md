@@ -9,11 +9,11 @@ Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 
 - Baixe o repositório como arquivo zip ou faça um clone;
 - Instale as dependências (npm install);
-- No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei PB (Paraíba);
-- Ex: https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=PB.
+- No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei o código da cidade de Patos - PB;
+- Ex: https://brasil.io/api/dataset/covid19/caso/data?is_last=True&city_ibge_code=2510808.
 ```
 getData(){
-      axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&state=SEU_ESTADO")
+      axios.get("https://brasil.io/api/dataset/covid19/caso/data?is_last=True&city_ibge_code=COD_IBGE_SUA_CIDADE")
       ...
 }
 ```
