@@ -87,7 +87,7 @@ export default {
             this.confirmed = patos.confirmed;
             this.deaths = patos.deaths;
             this.estimated_population_2019 = patos.estimated_population_2019;
-            this.death_rate = patos.death_rate;
+            this.death_rate = patos.death_rate*100+"%";
             this.date = patos.date
               .split("-")
               .reverse()
