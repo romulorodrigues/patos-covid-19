@@ -9,7 +9,7 @@ Link da aplicação: https://romulorodrigues.github.io/patos-covid-19/
 
 - Baixe o repositório como arquivo zip ou faça um clone;
 - Instale as dependências (npm install);
-- No método getData do componente Home, altere o "state" na url para o seu estado. No meu caso, usei o código da cidade de Patos - PB;
+- No método getData do componente Home, altere o "city_ibge_code" na url para o código do IBGE da sua cidade. No meu caso, usei o código da cidade de Patos - PB;
 - Ex: https://brasil.io/api/dataset/covid19/caso/data?is_last=True&city_ibge_code=2510808.
 ```
 getData(){
